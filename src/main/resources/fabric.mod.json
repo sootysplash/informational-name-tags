@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "info-name-tags",
+	"version": "${version}",
+	"name": "Informational Name Tags",
+	"description": "Adds a LOT of extra information to Entity name tags!",
+	"authors": [
+		"Sootysplash"
+	],
+	"contact": {
+		"homepage": "https://github.com/sootysplash",
+		"sources": "https://github.com/sootysplash/informational-name-tags"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/info-name-tags/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"me.sootysplash.MainInt"
+		],
+		"modmenu": [
+			"me.sootysplash.ModMenuINT"
+		]
+	},
+	"mixins": [
+		"info-name-tags.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
